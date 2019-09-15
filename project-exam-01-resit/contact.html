@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contact Good Food Mood">
+        <meta name="keywords" content="Contact, Help, Questions, Email, Assistance">
+        <title>Contact</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <a href="index.html"><img src="css/images/gfm-logo.png" class="logo"></a>
+        <ul class="menu">
+            <li><a href="index.html">HOME<img class="navigation-icons" src="css/images/home-icon.png" alt="Good Food Mood home icon"></a></li>
+            <li><a href="recipes.html">RECIPES<img class="navigation-icons" src="css/images/recipes-icon.png" alt="Good Food Mood recipes icon"></a></li>
+            <li><a href="about.html">ABOUT<img class="navigation-icons" src="css/images/about-icon.png" alt="Good Food Mood contact icon"></a></li>
+            <li><a href="contact.html">CONTACT<img class="navigation-icons" src="css/images/contact-icon.png" alt="Good Food Mood about icon"></a></li>
+        </ul>
+    </header>
+    <body>
+        <main>
+            <section class="contact-banner" alt="Typing on a laptop">
+            </section>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h1 class="contact-h1">We'd love to hear from you!</h1>
+                        <p class="contact-p">Feel free to send us a message if you have any questions regarding our website. We are more than happy to assist you!</p>
+                        <form class="form">
+                            <label for="input-name">Name:</label>
+                            <input type="text" name="name" class="form-input" id="input-name" oninput="checkInput()">
+                            <label for="input-email">Email:</label>
+                            <input type="text" name="email" class="form-input" id="input-email" oninput="checkInput()">
+                            <label for="input-message">Message here:</label>
+                            <textarea name="message" cols="30" rows="10" class="form-input" id="input-message" oninput="checkInput()"></textarea>
+                            <button onclick="submitTrigger()" type="submit" class="submit-button" disabled><b>Submit</b></button>
+                        </form>
+                        <p id="submit-text"></p>
+                        <p id="error-text"></p>
+                    </div>
+                </div>  
+        </main>
+        <script src="script/form.js"></script>
+    </body>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">Home</a></li>
+                <li><a href="index.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <p class="footer-text">&copy; Good Food Mood</p>
+            </ul>
+        </nav>
+    </footer>
+</html>

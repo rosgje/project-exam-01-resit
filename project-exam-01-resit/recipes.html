@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Recipe search for Good Food Mood">
+        <meta name="keywords" content="Recipes, Search, Find, Healthy, Food">
+        <title>Recipes</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <a href="index.html"><img src="css/images/gfm-logo.png" class="logo"></a>
+        <ul class="menu">
+            <li><a href="index.html">HOME<img class="navigation-icons" src="css/images/home-icon.png" alt="Good Food Mood home icon"></a></li>
+            <li><a href="recipes.html">RECIPES<img class="navigation-icons" src="css/images/recipes-icon.png" alt="Good Food Mood recipes icon"></a></li>
+            <li><a href="about.html">ABOUT<img class="navigation-icons" src="css/images/about-icon.png" alt="Good Food Mood contact icon"></a></li>
+            <li><a href="contact.html">CONTACT<img class="navigation-icons" src="css/images/contact-icon.png" alt="Good Food Mood about icon"></a></li>
+        </ul>
+    </header>
+    <body>
+        <section class="recipes-banner">
+            </section>
+        <main>
+            <div class="search-container">
+                <div class="wrap">
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="Search for a recipe here!">
+                        <button type="submit" class="searchButton">
+                            <img class="search-icon" src="css/images/search-icon.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="recipes">
+            <h1 class="recipe-label"></h1>
+            <img class="recipe-image">
+            <h2 class="recipe-source"></h2>
+            <h3 class="recipe-url"></h3>
+            <p class="recipe-ingredientlines"></p>
+            </div>
+        </main>
+        <script type="text/javascript" src="script/searchrecipe.js"></script>
+    </body>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">Home</a></li>
+                <li><a href="index.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <p class="footer-text">&copy; Good Food Mood</p>
+            </ul>
+        </nav>
+    </footer>
+</html>
+
